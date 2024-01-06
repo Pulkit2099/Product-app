@@ -20,7 +20,7 @@ const LoginForm = ({ onLogin }) => {
 
     try {
       // Send a POST request to your backend API for login
-      const response = await axios.post('http://localhost:3000/auth/login', formData);
+      const response = await axios.post('https://product-so46.onrender.com/auth/login', formData);
 
       // Extract the token from the response
       const { token } = response.data;
