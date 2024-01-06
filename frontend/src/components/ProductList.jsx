@@ -12,7 +12,7 @@ const ProductList = ({ token }) => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get('http://localhost:3000/products/all', {
+        const response = await axios.get('https://product-so46.onrender.com/products/all', {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -35,7 +35,7 @@ const ProductList = ({ token }) => {
 
   const handleDelete = async (productId) => {
     try {
-      await axios.delete(`http://localhost:3000/products/delete/${productId}`, {
+      await axios.delete(`https://product-so46.onrender.com/products/delete/${productId}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -60,7 +60,7 @@ const ProductList = ({ token }) => {
 
   const handleUpdateSubmit = async (updatedProductData) => {
     try {
-      await axios.put(`http://localhost:3000/products/update/${selectedProduct._id}`, updatedProductData, {
+      await axios.put(`https://product-so46.onrender.com/products/update/${selectedProduct._id}`, updatedProductData, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
