@@ -8,7 +8,7 @@ const FeaturedProducts = ({ token }) => {
     const fetchFeaturedProducts = async () => {
       try {
         // Make a GET request to your backend API endpoint for featured products
-        const response = await axios.get('http://localhost:3000/products/featured', {
+        const response = await axios.get('https://product-so46.onrender.com/products/featured', {
           headers: {
             Authorization: `Bearer ${token}`,
           },
