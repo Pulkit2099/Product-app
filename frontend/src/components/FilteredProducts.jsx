@@ -9,13 +9,13 @@ const ProductsFilter = ({ token }) => {
   const handleFilter = async () => {
     try {
       // Fetch products with price less than a certain value
-      const responsePrice = await axios.get(`http://localhost:3000/products/price/${maxPrice}`, {
+      const responsePrice = await axios.get(`https://product-so46.onrender.com/products/price/${maxPrice}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
       });
       // Fetch products with rating higher than a certain value
-      const responseRating = await axios.get(`http://localhost:3000/products/rating/${minRating}`, {
+      const responseRating = await axios.get(`https://product-so46.onrender.com/products/rating/${minRating}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
