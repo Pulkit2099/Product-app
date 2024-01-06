@@ -25,7 +25,7 @@ const AddProductForm = ({ token }) => {
     e.preventDefault();
 
     try {
-      await axios.post('http://localhost:3000/products/add', formData, {
+      await axios.post('https://product-so46.onrender.com/products/add', formData, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
