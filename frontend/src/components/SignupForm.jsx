@@ -19,7 +19,7 @@ const SignupForm = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:3000/auth/register', formData);
+      const response = await axios.post('https://product-so46.onrender.com/auth/register', formData);
 
       // Redirect to login page after successful registration
       navigate('/login');
